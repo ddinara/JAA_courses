@@ -22,5 +22,12 @@ public class MainClassTest extends MainClass
         Assert.assertTrue("Wrong number < 45",expected > 45);
     }
 
+    @Test
+    public void testGetClassString() {
+        String expected = this.getClassString();
+
+        Assert.assertTrue("class_string doesn't contains 'Hello' or 'hello'", this.getClassString().contains("Hello") | this.getClassString().contains("hello"));
+    }
+
 
 }
