@@ -15,4 +15,12 @@ public class MainClassTest extends MainClass
         Assert.assertTrue("Wrong number != 14",expected == 14);
     }
 
+    @Test
+    public void testGetClassNumber() {
+        int expected = this.getClassNumber();
+
+        Assert.assertTrue("Wrong number < 45",expected > 45);
+    }
+
+
 }
